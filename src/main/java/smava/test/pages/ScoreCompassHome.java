@@ -3,9 +3,13 @@ package smava.test.pages;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
+import static org.openqa.selenium.By.xpath;
+
 
 /**
  * Page object defining the page of ScoreCompass
@@ -13,8 +17,9 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 public class ScoreCompassHome {
 
 	private static final String SCORECOMPASS_ADRESS_WEB_SITE = "https://ostdteam:ostdteam@test.scorecompass.ostdlabs.com/";
-	public static final String SCORECOMPASS_TITLE = "Bonitätsprüfung Online - Ihre kostenlose Bonitätsauskunft | Score Kompass";
+	public static final String SCORECOMPASS_TEXT = "Mein Kontoscore";
 	private FirefoxDriver webDriverFirefoxDriver;
+	private By meinKontoscoreXPATH = xpath("//a[@href='" + "/#!kontoscore" + "']");
 
 	public ScoreCompassHome() {
 	}
@@ -32,7 +37,8 @@ public class ScoreCompassHome {
 	}
 
 	public void verifyLoadedPage() {
-		assertThat("The page is correctly load", this.webDriverFirefoxDriver.getTitle().equals(SCORECOMPASS_TITLE));
+		WebElement meinKontoscore = webDriverFirefoxDriver.findElement(meinKontoscoreXPATH);
+		assertThat("The element Mein Kontoscore of the page is correctly load", meinKontoscore.getText().equals(SCORECOMPASS_TEXT));
 		this.webDriverFirefoxDriver.close();
 	}
 }
