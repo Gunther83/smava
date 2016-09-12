@@ -10,7 +10,7 @@ import org.jbehave.web.selenium.WebDriverProvider;
 /**
  * Page object defining the page Detail loan of Smava
  */
-public class LoanDetailResultPage extends FluentWebDriverPage {
+public class LoanDetailResult extends FluentWebDriverPage {
 
 	public static final String PAGE_RESULT_TITLE = "Kredit beantragen | Kreditantrag in 4 Schritten | SMAVA";
 
@@ -19,7 +19,7 @@ public class LoanDetailResultPage extends FluentWebDriverPage {
 	 * 
 	 * @param webDriverProvider
 	 */
-	public LoanDetailResultPage(WebDriverProvider webDriverProvider) {
+	public LoanDetailResult(WebDriverProvider webDriverProvider) {
 		super(webDriverProvider);
 	}
 

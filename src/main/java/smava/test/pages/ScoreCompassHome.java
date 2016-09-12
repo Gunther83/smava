@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 public class ScoreCompassHome {
 
 	private static final String SCORECOMPASS_ADRESS_WEB_SITE = "https://ostdteam:ostdteam@test.scorecompass.ostdlabs.com/";
-	public static final String SCORECOMPASS_TITLE = "Bonit‰tspr¸fung Online - Ihre kostenlose Bonit‰tsauskunft | Score Kompass";
+	public static final String SCORECOMPASS_TITLE = "Bonit√§tspr√ºfung Online - Ihre kostenlose Bonit√§tsauskunft | Score Kompass";
 	private FirefoxDriver webDriverFirefoxDriver;
 
 	public ScoreCompassHome() {

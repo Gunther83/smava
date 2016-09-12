@@ -17,8 +17,8 @@ public class PageFactory {
 		return new SmavaHome(webDriverProvider);
 	}
 
-	public LoanDetailResultPage newResult() {
-		return new LoanDetailResultPage(webDriverProvider);
+	public LoanDetailResult newResult() {
+		return new LoanDetailResult(webDriverProvider);
 	}
 
 	public ScoreCompassHome newScoreCompass() {

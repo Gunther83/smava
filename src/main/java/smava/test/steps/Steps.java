@@ -5,7 +5,7 @@ import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-import smava.test.pages.LoanDetailResultPage;
+import smava.test.pages.LoanDetailResult;
 import smava.test.pages.PageFactory;
 import smava.test.pages.ScoreCompassHome;
 import smava.test.pages.SmavaHome;
@@ -19,7 +19,7 @@ import smava.test.pages.SmavaHome;
 public class Steps {
 
 	private SmavaHome smava;
-	private LoanDetailResultPage result;
+	private LoanDetailResult result;
 	private ScoreCompassHome scoreCompass;
 
 	public Steps(PageFactory pageFactory) {
